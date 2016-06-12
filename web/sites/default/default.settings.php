@@ -268,7 +268,7 @@ $config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync/';
  *
  * @see install_select_profile()
  */
-$settings['install_profile'] = 'standard';
+# $settings['install_profile'] = '';
 
 /**
  * Salt for one-time login links, cancel links, form tokens, etc.
@@ -287,7 +287,7 @@ $settings['install_profile'] = 'standard';
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+# $settings['hash_salt'] = '';
 
 /**
  * Deployment identifier.
