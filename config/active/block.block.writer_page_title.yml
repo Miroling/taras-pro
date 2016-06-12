@@ -1,0 +1,20 @@
+uuid: 71ae54dd-6a6e-4b25-a9ca-e81431621df9
+langcode: uk
+status: true
+dependencies:
+  theme:
+    - writer
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: writer_page_title
+theme: writer
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Заголовок сторінки'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,8 +1,0 @@
-uuid: bee0f923-20af-436c-b2cd-64f74d8d1df4
-langcode: uk
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: U5VlGjd_SfV0Qm_EfnaynOfc549cNscFAx48JfYoMRI
-id: default
-label: Default

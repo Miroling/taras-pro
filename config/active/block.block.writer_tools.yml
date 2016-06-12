@@ -1,0 +1,26 @@
+uuid: c8aa69f5-5b94-434d-9cc5-31958e5084a3
+langcode: uk
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - writer
+_core:
+  default_config_hash: NeHSoqm4XFqA7_0bDmR429ZZQt3LRbZMNRJTMsFyOfI
+id: writer_tools
+theme: writer
+region: pre_header
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Інструменти
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

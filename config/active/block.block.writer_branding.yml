@@ -1,0 +1,25 @@
+uuid: 6c834f88-ae2b-4972-8647-3dc2a9eccb90
+langcode: uk
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - writer
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: writer_branding
+theme: writer
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Брендування сайту'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

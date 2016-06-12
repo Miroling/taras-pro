@@ -1,0 +1,22 @@
+uuid: a8ec0b27-51c0-4732-b137-b84d58c02626
+langcode: uk
+status: true
+dependencies:
+  theme:
+    - writer
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: writer_local_tasks
+theme: writer
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Вкладки
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

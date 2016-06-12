@@ -1,0 +1,26 @@
+uuid: 7ad665ef-4b33-4a58-a264-2451c5994fc0
+langcode: uk
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - writer
+_core:
+  default_config_hash: DweBpscQZdG0-fHkSpUzdYucrNH45G_KF7Z82V-oyQM
+id: writer_account_menu
+theme: writer
+region: pre_header
+weight: 0
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'Меню облікового запису користувача'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

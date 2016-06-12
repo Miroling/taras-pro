@@ -1,0 +1,22 @@
+uuid: deda2439-08b7-4a46-a8cd-05ae9f6a47a4
+langcode: uk
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - writer
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: writer_help
+theme: writer
+region: content
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Довідка
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: ec08d7e9-b423-472e-a60d-9df882f972e8
+langcode: uk
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - writer
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: writer_content
+theme: writer
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Вміст головної сторінки'
+  provider: system
+  label_display: '0'
+visibility: {  }
