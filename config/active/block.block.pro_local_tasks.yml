@@ -1,13 +1,13 @@
-uuid: a8ec0b27-51c0-4732-b137-b84d58c02626
+uuid: 77b44f4e-fcac-4501-b8e6-58ef192e1736
 langcode: uk
 status: true
 dependencies:
   theme:
-    - writer
+    - pro
 _core:
   default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
-id: writer_local_tasks
-theme: writer
+id: pro_local_tasks
+theme: pro
 region: content
 weight: -7
 provider: null

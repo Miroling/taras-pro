@@ -1,15 +1,15 @@
-uuid: 373ae8ce-002f-4617-90e6-9dd58c0fd471
+uuid: ae6e20c6-dfdb-41e9-adcc-c07cbebc5b61
 langcode: uk
 status: true
 dependencies:
   module:
     - system
   theme:
-    - writer
+    - pro
 _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
-id: writer_breadcrumbs
-theme: writer
+id: pro_breadcrumbs
+theme: pro
 region: pre_header
 weight: 0
 provider: null

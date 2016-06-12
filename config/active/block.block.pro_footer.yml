@@ -1,4 +1,4 @@
-uuid: 4f67e145-834f-4ffb-a554-3a3ec26e75e4
+uuid: ce5eb033-e230-41c9-acd8-9300dfcb7f6d
 langcode: uk
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - writer
+    - pro
 _core:
   default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
-id: writer_footer
-theme: writer
+id: pro_footer
+theme: pro
 region: pre_header
 weight: -6
 provider: null

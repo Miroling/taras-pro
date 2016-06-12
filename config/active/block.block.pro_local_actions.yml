@@ -1,13 +1,13 @@
-uuid: 77879b13-f1d3-42ea-b748-18d4b450d50d
+uuid: 8e22a827-11c8-4e04-839a-cc7d6873ca0e
 langcode: uk
 status: true
 dependencies:
   theme:
-    - writer
+    - pro
 _core:
   default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
-id: writer_local_actions
-theme: writer
+id: pro_local_actions
+theme: pro
 region: content
 weight: -7
 provider: null

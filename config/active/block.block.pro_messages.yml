@@ -1,15 +1,15 @@
-uuid: c30e1cc3-7f56-4aea-aca2-edbef7eaf022
+uuid: 411ae27e-dc05-4cd0-8027-b862206d5287
 langcode: uk
 status: true
 dependencies:
   module:
     - system
   theme:
-    - writer
+    - pro
 _core:
   default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
-id: writer_messages
-theme: writer
+id: pro_messages
+theme: pro
 region: highlighted
 weight: 0
 provider: null

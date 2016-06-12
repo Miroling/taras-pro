@@ -1,15 +1,15 @@
-uuid: deda2439-08b7-4a46-a8cd-05ae9f6a47a4
+uuid: 6ded186c-96a0-4e68-bcad-3ab790dd3527
 langcode: uk
 status: true
 dependencies:
   module:
     - help
   theme:
-    - writer
+    - pro
 _core:
   default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
-id: writer_help
-theme: writer
+id: pro_help
+theme: pro
 region: content
 weight: -7
 provider: null

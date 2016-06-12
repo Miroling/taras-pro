@@ -1,4 +1,4 @@
-uuid: 248e8ea9-83c3-4ba0-adde-3c99aa92e72d
+uuid: b2b704c1-c9bb-4ca6-9b3f-8c8f4a469b75
 langcode: uk
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - writer
+    - pro
 _core:
   default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
-id: writer_main_menu
-theme: writer
+id: pro_main_menu
+theme: pro
 region: pre_header
 weight: 0
 provider: null

@@ -1,0 +1,30 @@
+name: Pro blogger
+type: theme
+base theme: classy
+description: "A minimalist theme designed for a developer's personal blog."
+package: APIBEST
+# core: 8.x
+engine: twig
+screenshot: screenshot.png
+libraries:
+  - pro/global-assets
+regions:
+  pre_header: 'Pre-Header'
+  main_menu: 'Main Menu'
+  header: Header
+  post_header: 'Post-Header'
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  footer_top: 'Footer Top'
+  footer_left: 'Footer Left'
+  footer_right: 'Footer Right'
+  footer_bottom: 'Footer Bottom'
+  footer_message: 'Footer Message'
+  footer_menu: 'Footer Menu'
+
+# Information added by Drupal.org packaging script on 2016-02-20
+version: '8.x-2.2-rc1'
+core: '8.x'
+project: 'pro'
+datestamp: 1455951027
