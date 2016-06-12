@@ -719,14 +719,3 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 if (file_exists(__DIR__ . '/settings.local.php')) { 
     include __DIR__ . '/settings.local.php';
 }
-$databases['default']['default'] = array (
-  'database' => 'p_drupal',
-  'username' => 'root',
-  'password' => 'toor',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
-$settings['install_profile'] = 'standard';
