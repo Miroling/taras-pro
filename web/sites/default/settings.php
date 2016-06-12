@@ -245,8 +245,6 @@
  * @endcode
  */
 $config_directories = array();
-$config_directories[CONFIG_ACTIVE_DIRECTORY] = '../config/sync/';
-$config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync/';
 
 /**
  * Settings:
@@ -483,8 +481,8 @@ if ($settings['hash_salt']) {
  *
  * Value should be in PHP Octal Notation, with leading zero.
  */
-$settings['file_chmod_directory'] = 0775;
-$settings['file_chmod_file'] = 0775;
+# $settings['file_chmod_directory'] = 0775;
+# $settings['file_chmod_file'] = 0664;
 
 /**
  * Public file base URL:
@@ -521,7 +519,7 @@ $settings['file_chmod_file'] = 0775;
  * See https://www.drupal.org/documentation/modules/file for more information
  * about securing private files.
  */
-$settings['file_private_path'] = '../files';
+# $settings['file_private_path'] = '';
 
 /**
  * Session write interval:
@@ -600,7 +598,7 @@ $settings['file_private_path'] = '../files';
  *   override in a services.yml file in the same directory as settings.php
  *   (definitions in this file will override service definition defaults).
  */
-$settings['bootstrap_config_storage'] = array('Drupal\Core\Config\BootstrapConfigStorageFactory', 'getFileStorage');
+# $settings['bootstrap_config_storage'] = array('Drupal\Core\Config\BootstrapConfigStorageFactory', 'getFileStorage');
 
 /**
  * Configuration overrides.
@@ -716,8 +714,6 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  *
  * Keep this code block at the end of this file to take full effect.
  */
-
-if (file_exists(__DIR__ . '/settings.local.php')) {
- include __DIR__ . '/settings.local.php';
-}
-
+//if (file_exists(__DIR__ . '/settings.local.php')) { 
+//    include __DIR__ . '/settings.local.php';
+//}
