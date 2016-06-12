@@ -1,0 +1,12 @@
+uuid: cdc0d6b7-c2ef-42d4-bfc7-520aabd53815
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: c4zaT5cyPxuTXI6JOWt3qRtMvICT9tHB6d9a5VG-CmQ
+id: feedback
+label: 'Website feedback'
+recipients:
+  - mail@taras.pro
+reply: ''
+weight: 0

@@ -245,6 +245,8 @@
  * @endcode
  */
 $config_directories = array();
+$config_directories[CONFIG_ACTIVE_DIRECTORY] = '../config/sync/';
+$config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync/';
 
 /**
  * Settings:
@@ -285,7 +287,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'DWLbhvJQCRuch3TtMLR3QYe3dRZPsCAsmPkJ69nVfu7x-Zzg-Esjz6SKpiB_qmwJRyV-daMBsQ';
+$settings['hash_salt'] = '1BOVysMzb_oxMjeeR50J3XY-nWMs-soSGr4GlWb4ZyhVqyTzGSh9lWm9yoMbsSavZ2WAQzqeig';
 
 /**
  * Deployment identifier.
@@ -598,7 +600,7 @@ if ($settings['hash_salt']) {
  *   override in a services.yml file in the same directory as settings.php
  *   (definitions in this file will override service definition defaults).
  */
-# $settings['bootstrap_config_storage'] = array('Drupal\Core\Config\BootstrapConfigStorageFactory', 'getFileStorage');
+$settings['bootstrap_config_storage'] = array('Drupal\Core\Config\BootstrapConfigStorageFactory', 'getFileStorage');
 
 /**
  * Configuration overrides.
@@ -714,6 +716,9 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  *
  * Keep this code block at the end of this file to take full effect.
  */
-if (file_exists(__DIR__ . '/settings.local.php')) { 
-    include __DIR__ . '/settings.local.php';
+$settings['install_profile'] = 'standard';
+
+if (file_exists(__DIR__ . '/settings.local.php')) {
+ include __DIR__ . '/settings.local.php';
 }
+

@@ -1,0 +1,14 @@
+uuid: 9a3f1076-9a42-4e3e-9428-473fc633a8af
+name: 'Taras Omelianenko'
+mail: mail@taras.pro
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
