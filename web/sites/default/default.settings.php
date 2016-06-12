@@ -86,7 +86,7 @@
  * );
  * @endcode
  */
- $databases = array();
+$databases = array();
 
 /**
  * Customizing database settings.
@@ -245,6 +245,8 @@
  * @endcode
  */
 $config_directories = array();
+$config_directories[CONFIG_ACTIVE_DIRECTORY] = '../config/sync/';
+$config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync/';
 
 /**
  * Settings:
@@ -519,7 +521,7 @@ if ($settings['hash_salt']) {
  * See https://www.drupal.org/documentation/modules/file for more information
  * about securing private files.
  */
-# $settings['file_private_path'] = '';
+$settings['file_private_path'] = '../files';
 
 /**
  * Session write interval:
@@ -598,7 +600,7 @@ if ($settings['hash_salt']) {
  *   override in a services.yml file in the same directory as settings.php
  *   (definitions in this file will override service definition defaults).
  */
-# $settings['bootstrap_config_storage'] = array('Drupal\Core\Config\BootstrapConfigStorageFactory', 'getFileStorage');
+$settings['bootstrap_config_storage'] = array('Drupal\Core\Config\BootstrapConfigStorageFactory', 'getFileStorage');
 
 /**
  * Configuration overrides.
@@ -714,6 +716,8 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  *
  * Keep this code block at the end of this file to take full effect.
  */
-# if (file_exists(__DIR__ . '/settings.local.php')) {
-#   include __DIR__ . '/settings.local.php';
-# }
+
+if (file_exists(__DIR__ . '/settings.local.php')) {
+ include __DIR__ . '/settings.local.php';
+}
+
