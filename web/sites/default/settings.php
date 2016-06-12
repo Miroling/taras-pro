@@ -716,7 +716,17 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  *
  * Keep this code block at the end of this file to take full effect.
  */
-$settings['install_profile'] = 'standard';
+
+$databases['default']['default'] = array (
+    'database' => 'p_taraspro',
+    'username' => 'root',
+    'password' => 'toor',
+    'prefix' => '',
+    'host' => '127.0.0.1',
+    'port' => '3306',
+    'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+    'driver' => 'mysql',
+);
 
 if (file_exists(__DIR__ . '/settings.local.php')) {
  include __DIR__ . '/settings.local.php';
