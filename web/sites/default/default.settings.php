@@ -268,7 +268,7 @@ $config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync/';
  *
  * @see install_select_profile()
  */
-# $settings['install_profile'] = '';
+$settings['install_profile'] = 'standard';
 
 /**
  * Salt for one-time login links, cancel links, form tokens, etc.
@@ -483,8 +483,8 @@ if ($settings['hash_salt']) {
  *
  * Value should be in PHP Octal Notation, with leading zero.
  */
-# $settings['file_chmod_directory'] = 0775;
-# $settings['file_chmod_file'] = 0664;
+$settings['file_chmod_directory'] = 0775;
+$settings['file_chmod_file'] = 0775;
 
 /**
  * Public file base URL:
