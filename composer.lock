@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a002dd0d34209a99aca73bcec7ca10ba",
-    "content-hash": "3c0304f7de344e906ade89f64f11ec29",
+    "hash": "82e6a8a636bbde4a6261b9153e7a367e",
+    "content-hash": "420928bb6885c5360b31db1d4eb55ab6",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1083,6 +1083,51 @@
             }
         },
         {
+            "name": "drupal/devel",
+            "version": "dev-1.0.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/devel",
+                "reference": "5c6a5068bbf9e3ea0c46ed34777b679a14a38580"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "suggest": {
+                "drupal/drupal": "Required by drupal/devel_node_access"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.0.x": "1.0.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1465196339"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Moshe Weitzman",
+                    "email": "weitzman@tejasa.com",
+                    "homepage": "https://github.com/weitzman",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Various blocks, pages, and functions for developers.",
+            "homepage": "http://drupal.org/project/devel",
+            "support": {
+                "issues": "http://drupal.org/project/devel",
+                "irc": "irc://irc.freenode.org/drupal-contribute",
+                "source": "http://cgit.drupalcode.org/devel"
+            },
+            "time": "2016-06-06 06:59:02"
+        },
+        {
             "name": "drupal/lang_dropdown",
             "version": "dev-2.0.x",
             "source": {
@@ -1101,6 +1146,9 @@
                 "drupal": {
                     "version": "8.x-2.x-dev",
                     "datestamp": "1387051406"
+                },
+                "patches_applied": {
+                    "Block not available in UI": "https://www.drupal.org/files/issues/2475819-3-D8.0.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5863,7 +5911,8 @@
         "drupal/writer": 5,
         "drupal/lang_dropdown": 20,
         "drupal/pathauto": 20,
-        "drupal/xmlsitemap": 20
+        "drupal/xmlsitemap": 20,
+        "drupal/devel": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

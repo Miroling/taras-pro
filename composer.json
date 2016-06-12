@@ -9,12 +9,12 @@
             "role": ""
         }
     ],
-    "repositories": {
-        "drupal": {
+    "repositories": [
+        {
             "type": "composer",
-            "url":  "https://packages.drupal.org/8"
+            "url": "https://packages.drupal.org/8"
         }
-    },
+    ],
     "require": {
         "composer/installers": "^1.0.20",
         "drupal-composer/drupal-scaffold": "^2.0.1",
@@ -25,7 +25,8 @@
         "drupal/writer": "^2.2@RC",
         "drupal/lang_dropdown": "2.0.x-dev",
         "drupal/pathauto": "1.0.x-dev",
-        "drupal/xmlsitemap": "1.0.x-dev"
+        "drupal/xmlsitemap": "1.0.x-dev",
+        "drupal/devel": "1.0.x-dev"
     },
     "require-dev": {
        "behat/mink": "~1.7",
@@ -62,6 +63,11 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "patches": {
+            "drupal/lang_dropdown": {
+                "Block not available in UI": "https://www.drupal.org/files/issues/2475819-3-D8.0.patch"
+            }
         }
     }
 }
