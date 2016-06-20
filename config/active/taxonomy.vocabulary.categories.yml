@@ -1,0 +1,9 @@
+uuid: 93d4d648-d600-423d-8c86-9f0006d1a3ca
+langcode: uk
+status: true
+dependencies: {  }
+name: Категорії
+vid: categories
+description: ''
+hierarchy: 0
+weight: 0
